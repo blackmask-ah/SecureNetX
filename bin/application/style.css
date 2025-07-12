@@ -1,0 +1,123 @@
+.root {
+    -fx-background-color: linear-gradient(to bottom, #2c3e50, #1c1c1c);
+    -fx-font-family: "Segoe UI", "Roboto", sans-serif;
+    -fx-text-fill: #e0e0e0;
+}
+
+/* Title Styling */
+.title {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-effect: dropshadow(one-pass-box, rgba(0, 0, 0, 0.5), 3, 0.6, 0, 2);
+}
+
+/* Section Title */
+.section-title {
+    -fx-text-fill: #90caf9;
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(one-pass-box, rgba(33, 150, 243, 0.4), 2, 0.3, 0, 1);
+}
+
+/* Table Styling */
+.styled-table {
+    -fx-background-color: linear-gradient(to bottom, #f5f5f5, #eeeeee);
+    -fx-border-color: #bdbdbd;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 8;
+    -fx-table-cell-border-color: transparent;
+}
+
+.table-cell,
+.table-row-cell,
+.table-view .column-header .label {
+    -fx-text-fill: #000000; /* Black text */
+    -fx-font-size: 13px;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #e0e0e0;
+}
+
+.table-row-cell:filled:hover {
+    -fx-background-color: #d1eaff;
+}
+/* Button Styling - Clean Blue Theme, No Shadow */
+.button {
+    -fx-background-color: linear-gradient(to bottom, #37474f, #263238); /* dark blue/grey */
+    -fx-text-fill: #90caf9; /* cyan/light blue text */
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-padding: 6 20;
+    -fx-cursor: hand;
+    -fx-border-color: #90caf9;
+    -fx-border-width: 1;
+    -fx-effect: none; /* ⛔ no shadow */
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #455a64, #37474f);
+    -fx-effect: none;
+}
+
+.button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #263238, #1c313a);
+    -fx-effect: none;
+}
+
+
+
+/* Input Fields */
+.text-field, .combo-box {
+    -fx-background-color: #1e1e1e;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: #424242;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-padding: 6 12;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 2, 0.2, 0, 1);
+}
+
+.text-field:prompt-text,
+.combo-box:prompt-text {
+    -fx-text-fill: #9e9e9e;
+    -fx-font-style: italic;
+}
+
+/* Log Area */
+.log-area {
+    -fx-control-inner-background: #263238;
+    -fx-text-fill: #a5d6a7;
+    -fx-font-family: "Consolas", monospace;
+    -fx-font-size: 13px;
+    -fx-border-color: #4caf50;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-effect: dropshadow(one-pass-box, #66bb6a, 2, 0.2, 0, 1);
+}
+
+/* Close Button Style */
+.close-button {
+    -fx-background-color: #263238;      /* Red */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 15;          /* Half of width/height (30px) to make it circular */
+    -fx-border-radius: 15;
+    -fx-font-size: 14px;
+    -fx-cursor: hand;
+    -fx-pref-width: 30;
+    -fx-pref-height: 30;
+    -fx-alignment: center;
+    -fx-padding: 0;
+}
+
+/* Hover effect */
+.close-button:hover {
+    -fx-background-color:  #000000;
+}
+
+

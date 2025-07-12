@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            prefWidth="600" prefHeight="400"
+            style="-fx-background-color: black;">
+
+    <ImageView layoutX="0" layoutY="0" fitWidth="600" fitHeight="400"
+               preserveRatio="false" smooth="true" cache="true" pickOnBounds="true">
+        <image>
+            <Image url="@logo.png" />
+        </image>
+    </ImageView>
+
+    <ProgressBar fx:id="progressBar"
+                 layoutX="100" layoutY="360"
+                 prefWidth="400" prefHeight="15"
+                 progress="0"
+                 style="-fx-accent: #2196f3;
+                        -fx-border-color: black;
+                        -fx-border-width: 1;
+                        -fx-background-radius: 5;
+                        -fx-border-radius: 5;
+                        -fx-padding: 1;
+                        -fx-effect: dropshadow(gaussian, #2196f3, 8, 0.3, 0, 0);
+                        -fx-background-insets: 0;
+                        -fx-focus-color: transparent;
+                        -fx-faint-focus-color: transparent;" />
+</AnchorPane>

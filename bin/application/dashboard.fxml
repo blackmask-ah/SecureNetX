@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="661.0" prefWidth="918.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.DashboardController">
+
+    <!-- Title -->
+    <Label layoutX="252.0" layoutY="14.0" prefWidth="443.0" styleClass="title" text="SecureNetX Firewall Manager" />
+
+    <!-- Services Table -->
+    <TableView fx:id="table" layoutX="20.0" layoutY="65.0" prefHeight="250" prefWidth="878.0" styleClass="styled-table">
+        <columns>
+            <TableColumn fx:id="protocolCol" prefWidth="100" text="Protocol" />
+            <TableColumn fx:id="ipAddressCol" prefWidth="180" text="IP Address" />
+            <TableColumn fx:id="portCol" prefWidth="80" text="Port" />
+            <TableColumn fx:id="processCol" prefWidth="491.0" text="Process" />
+        </columns>
+    </TableView>
+
+    <!-- Firewall Rule Panel -->
+    <VBox layoutX="20" layoutY="330" spacing="8">
+        <Label styleClass="section-title" text="Manage Firewall Rules:" />
+        <HBox spacing="8">
+            <TextField fx:id="ruleProtocolField" prefWidth="80" promptText="tcp/udp" />
+            <TextField fx:id="ruleIpField" prefWidth="140" promptText="IP Address (optional)" />
+            <TextField fx:id="rulePortField" prefWidth="80" promptText="Port" />
+            <ComboBox fx:id="ruleActionBox" prefWidth="115.0" />
+            <Button onAction="#addFirewallRule" styleClass="button" text="Add Rule" />
+            <Button onAction="#deleteFirewallRule" styleClass="button" text="Delete Rule" />
+            <Button onAction="#scanServices" styleClass="button" text="Rescan" />
+        </HBox>
+    </VBox>
+
+    <!-- IP Block Panel -->
+    <VBox layoutX="20" layoutY="420" spacing="8">
+        <Label styleClass="section-title" text="Block Access to IP/Domain:" />
+        <HBox spacing="8">
+            <TextField fx:id="blockIpField" prefWidth="200" promptText="IP or Domain" />
+            <Button onAction="#blockIp" styleClass="button" text="Block IP" />
+            <Button onAction="#unblockIp" styleClass="button" text="Unblock IP" />
+        </HBox>
+    </VBox>
+
+    <!-- Log Area -->
+    <TextArea fx:id="logArea" editable="false" layoutX="20" layoutY="500" prefHeight="130" prefWidth="878.0" styleClass="log-area" wrapText="true" />
+
+    <!-- Close Button -->
+    <Button layoutX="880.0" layoutY="10.0" text="X" styleClass="close-button" onAction="#exitProgram" />
+
+</AnchorPane>

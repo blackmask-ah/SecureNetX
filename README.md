@@ -8,7 +8,7 @@ Ideal for cybersecurity learners, system administrators, or anyone who wants a g
   <br/>
   <img width="720" height="980" alt="view01" src="https://github.com/user-attachments/assets/8af4c808-4230-4e8e-a0c5-28dbf6df2cb8" />
   <br/>
-  <img width="720" height=980" alt="view02" src="https://github.com/user-attachments/assets/14e9fa4f-95e5-44ba-8f50-05ef020bda9d" />
+  <img width="920" height=680" alt="view02" src="https://github.com/user-attachments/assets/14e9fa4f-95e5-44ba-8f50-05ef020bda9d" />
 </p>
 
 ---
